@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Paypal Buttons Sample</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="card">
+        <p>New Camera</p>
+        <p class="price">$15.00</p>
+
+        <div id="paypal-button"></div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-functions.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            // Your firebase config here
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Include PayPal SDK with Sandbox Client ID -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AbgB4F3fo47G1nJvSeA0LdCjXJbQaUptTUt-3GFJDvYcqFPudZ93BNApZ7mIgE99724ec5Qgukvm2cYQ&currency=USD"></script>
+    <script src="/scripts.js"></script>
+</body>
+
+</html>
